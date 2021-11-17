@@ -48,10 +48,14 @@ const throttle = function (method, context) {
 
 
 // 模拟获取数据
+// function fetchData() {
+//     setTimeout(function() {
+//          pullUpLoad()
+//      }, 500);
+//  }
+//
 function fetchData() {
-    setTimeout(function() {
-         pullUpLoad()
-     }, 500);
+     pullUpLoad()
  }
 
 window.onscroll = function() {
