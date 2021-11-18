@@ -23,6 +23,9 @@ avidhotels = "https://yazing.com/go/35083603/saverneo";
 avis = "https://yazing.com/deals/avis/saverneo";
 backwoods = "https://yazing.com/deals/backwoods/saverneo";
 ballys_las_vegas = "https://yazing.com/deals/ballys-las-vegas/saverneo";
+barcelo = "https://yazing.com/deals/barcelo/saverneo";
+bellagio = "https://yazing.com/deals/bellagio/saverneo";
+bestwestern = "https://yazing.com/deals/bestwestern/saverneo";
 
 $(function () {
 
@@ -53,6 +56,9 @@ $(function () {
             case "avis" : window.location.href= avis;break;
             case "backwoods" : window.location.href= backwoods;break;
             case "ballys_las_vegas" : window.location.href= ballys_las_vegas;break;
+            case "barcelo" : window.location.href= barcelo;break;
+            case "bellagio" : window.location.href= bellagio;break;
+            case "bestwestern" : window.location.href= bestwestern;break;
             default:break;
         }
     });
