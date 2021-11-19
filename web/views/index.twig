@@ -25,6 +25,61 @@
 
     <div class="columns features">
 
+      <div class="column is-4" data-target="bigbustours">
+        <div class="card is-shady">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="/images/bigbustours.jpg" alt="bigbustours deals" class="modal-button" >
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <h4>BIG BUS TOURS DEALS</h4>
+              <p>Big Bus Tours is the largest operator of open-top sightseeing tours worldwide operating in 23 cities across the globe. Hop-on, hop-off at major landmarks plus range of experiences such as river cruises, guided walking tours and entry to local attractions.</p>
+              <span class="button is-link modal-button">BOOK NOW</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-4" data-target="bookingcredits">
+        <div class="card is-shady">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="/images/bookingcredits.jpg?v=1" alt="bookingcredits deals" >
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <h4>BOOKINGCREDITS.COM DEALS</h4>
+              <p>Booking Credits has access to ultra-low priced hotel inventory that isn’t available to the general public or other traffic sites.</p>
+              <span class="button is-link modal-button">CHECK IT OUT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-4 modal-button" data-target="bookvip">
+        <div class="card is-shady">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="/images/bookvip.jpg?" alt="bookvip deals">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <h4>BOOKVIP DEALS</h4>
+              <p>Bookvip.com has an unrelenting desire to offer world-class travel experiences, affordably. Unlike other popular travel sites they never sell their vacation getaways at retail prices, they have direct fulfillment agreements with each resort destination that allows us to offer wholesale rates directly to consumers. They are the ultimate matchmaker between resorts, cruise lines and travelers, with over 1 million online bookings and climbing!</p>
+              <span class="button is-link modal-button">CHECK IT OUT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="columns features">
+
       <div class="column is-4 modal-button" data-target="barcelo">
         <div class="card is-shady">
           <div class="card-image">
@@ -188,61 +243,6 @@
 
     </div>
 
-    <div class="columns features">
-
-      <div class="column is-4" data-target="aria">
-        <div class="card is-shady">
-          <div class="card-image">
-            <figure class="image is-4by3">
-              <img src="/images/aria.jpg?" alt="aria deals" class="modal-button" >
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="content">
-              <h4>ARIA RESORT & CASINO DEALS</h4>
-              <p>ARIA Las Vegas is the epitome of luxury casino resorts - featuring luxury suites, expansive views of the Las Vegas Strip, while being central to things to do in Las Vegas.</p>
-              <span class="button is-link modal-button">CHECK IT OUT</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="column is-4" data-target="ascend">
-        <div class="card is-shady">
-          <div class="card-image">
-            <figure class="image is-4by3">
-              <img src="/images/ascend.jpg?" alt="ascend deals" class="modal-button" >
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="content">
-              <h4>ASCEND HOTEL COLLECTION BY CHOICE HOTELS DEALS</h4>
-              <p>The boutique hotels in the Ascend Hotel Collection by Choice Hotels are a wonderful way to "go native" when you're traveling, to feel like you're part of the local scene. Each Ascend hotel is a unique reflection of its local community.</p>
-              <span class="button is-link modal-button">CHECK IT OUT</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="column is-4" data-target="atlantis">
-        <div class="card is-shady">
-          <div class="card-image">
-            <figure class="image is-4by3">
-              <img src="/images/atlantis.jpg?" alt="atlantis deals" class="modal-button" >
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="content">
-              <h4>ATLANTIS  DEALS</h4>
-              <p>Atlantis Paradise Island, Bahamas is the most popular resort destination in the Caribbean. Visit the world's largest open-air marine habitat, 141-acre Aquaventure Water Park, 11 pools, renowned beaches & golf courses, casino, 21 restaurants & 19 bars.</p>
-              <span class="button is-link modal-button">CHECK IT OUT</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
   </section>
 
   <div id="pullUpText" class="box cta loading">
@@ -371,7 +371,7 @@
   </footer>
 
   <script src="/js/jquery-3.5.1.min.js"></script>
-  <script src="/js/funcs.js?v=1.1"></script>
+  <script src="/js/funcs.js?v=1.2"></script>
   <script src="/js/pullUp.js?v=1.2"></script>
 
   <script>
@@ -383,7 +383,7 @@
         //console.log("page "+page+" loaded.");
         $.ajax({
           type: "GET",
-          url: "/views/"+page+".html?v=1.5",
+          url: "/views/"+page+".html?v=1.6",
           dataType: "html",
           async: false,
           success: function(data){

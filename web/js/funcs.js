@@ -26,6 +26,9 @@ ballys_las_vegas = "https://yazing.com/deals/ballys-las-vegas/saverneo";
 barcelo = "https://yazing.com/deals/barcelo/saverneo";
 bellagio = "https://yazing.com/deals/bellagio/saverneo";
 bestwestern = "https://yazing.com/deals/bestwestern/saverneo";
+bigbustours = "https://yazing.com/deals/bigbustours/saverneo";
+bookingcredits = "https://yazing.com/deals/bookingcredits/saverneo";
+bookvip = "https://yazing.com/deals/bookvip/saverneo";
 
 $(function () {
 
@@ -59,6 +62,9 @@ $(function () {
             case "barcelo" : window.location.href= barcelo;break;
             case "bellagio" : window.location.href= bellagio;break;
             case "bestwestern" : window.location.href= bestwestern;break;
+            case "bigbustours" : window.location.href= bigbustours;break;
+            case "bookingcredits" : window.location.href= bookingcredits;break;
+            case "bookvip" : window.location.href= bookvip;break;
             default:break;
         }
     });
