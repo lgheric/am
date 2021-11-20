@@ -2,8 +2,11 @@
 
 require('../vendor/autoload.php');
 
+// Import the BinaryFileResponse
+use Symfony\Component\HttpFoundation\ResponseHeaderBag;
+
 $app = new Silex\Application();
-$app['debug'] = false;
+$app['debug'] = true;
 
 // Register the monolog logging service
 $app->register(new Silex\Provider\MonologServiceProvider(), array(
@@ -25,6 +28,30 @@ $app->get('/', function() use($app) {
 $app->get('/about', function() use($app) {
   $app['monolog']->addDebug('about');
   return $app['twig']->render('about.twig');
+});
+
+$app->get('/download', function() use($app) {
+    $app['monolog']->addDebug('download');
+    //TODO:count+1
+
+    $path = __DIR__ . "/docs/Resume_of_PHP_developer_Eric_Lee.pdf";
+
+    if (!file_exists($path)) {
+        $app->abort(404, "Whoops,file lost.");
+    }
+
+    $headers = [];
+    $headers['Content-Description'] = 'File Transfer';
+    $headers['Content-Type'] = 'application/octet-stream';
+    $headers['Content-Disposition'] ='attachment; filename=' . basename($path);
+    $headers['Content-Transfer-Encoding'] = 'binary';
+    $headers['Expires'] = '0';
+    $headers['Cache-Control'] = 'must-revalidate';
+    $headers['Pragma'] = 'public';
+    $headers['Content-Length'] = filesize($path);
+
+    return $app->sendFile($path,200,$headers)->setContentDisposition(ResponseHeaderBag::DISPOSITION_ATTACHMENT, basename($path));
+
 });
 
 //TODO
