@@ -30,7 +30,7 @@ bigbustours = "https://yazing.com/deals/bigbustours/saverneo";
 bookingcredits = "https://yazing.com/deals/bookingcredits/saverneo";
 bookvip = "https://yazing.com/deals/bookvip/saverneo";
 bougerv = "https://yazing.com/deals/bougerv/saverneo";
-boulderstation = "https://yazing.com/boulderstation/bougerv/saverneo";
+boulderstation = "https://yazing.com/deals/boulderstation/saverneo";
 brusselsairlines = "https://yazing.com/go/38885750/saverneo";
 
 $(function () {
