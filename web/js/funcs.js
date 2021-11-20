@@ -29,6 +29,9 @@ bestwestern = "https://yazing.com/deals/bestwestern/saverneo";
 bigbustours = "https://yazing.com/deals/bigbustours/saverneo";
 bookingcredits = "https://yazing.com/deals/bookingcredits/saverneo";
 bookvip = "https://yazing.com/deals/bookvip/saverneo";
+bougerv = "https://yazing.com/deals/bougerv/saverneo";
+boulderstation = "https://yazing.com/boulderstation/bougerv/saverneo";
+brusselsairlines = "https://yazing.com/go/38885750/saverneo";
 
 $(function () {
 
@@ -65,6 +68,9 @@ $(function () {
             case "bigbustours" : window.location.href= bigbustours;break;
             case "bookingcredits" : window.location.href= bookingcredits;break;
             case "bookvip" : window.location.href= bookvip;break;
+            case "bougerv" : window.location.href= bougerv;break;
+            case "boulderstation" : window.location.href= boulderstation;break;
+            case "brusselsairlines" : window.location.href= brusselsairlines;break;
             default:break;
         }
     });
