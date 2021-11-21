@@ -32,6 +32,9 @@ bookvip = "https://yazing.com/deals/bookvip/saverneo";
 bougerv = "https://yazing.com/deals/bougerv/saverneo";
 boulderstation = "https://yazing.com/deals/boulderstation/saverneo";
 brusselsairlines = "https://yazing.com/go/38885750/saverneo";
+budget = "https://yazing.com/deals/budget/saverneo";
+bulbhead = "https://yazing.com/deals/bulbhead/saverneo";
+caesars_ac = "https://yazing.com/deals/caesars-ac/saverneo";
 
 $(function () {
 
@@ -71,6 +74,9 @@ $(function () {
             case "bougerv" : window.location.href= bougerv;break;
             case "boulderstation" : window.location.href= boulderstation;break;
             case "brusselsairlines" : window.location.href= brusselsairlines;break;
+            case "budget" : window.location.href= budget;break;
+            case "bulbhead" : window.location.href= bulbhead;break;
+            case "caesars_ac" : window.location.href= caesars_ac;break;
             default:break;
         }
     });
