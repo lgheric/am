@@ -1,9 +1,0 @@
-add barcelo, bellagio, bestwestern, and async - ,and checkout - it out etc.
-[main e4ed6c3] add barcelo, bellagio, bestwestern, and async - ,and checkout - it out etc.
- 9 files changed, 210 insertions(+), 140 deletions(-)
- create mode 100644 check
- create mode 100644 sync
- create mode 100644 web/images/barcelo.jpg
- create mode 100644 web/images/bellagio.jpg
- create mode 100644 web/images/bestwestern.jpg
- create mode 100644 web/views/3.html
